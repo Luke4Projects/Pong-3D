@@ -4,11 +4,12 @@ project(Pong VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
+# make sure you change these to your library directories
 include_directories("libraries/include")
 link_directories("libraries/lib")
 
 add_executable(Pong 
-libraries/lib/glad.c
+libraries/lib/glad.c # change this to your glad.c file
 
 src/main.cpp
 src/game.cpp src/header/game.h
